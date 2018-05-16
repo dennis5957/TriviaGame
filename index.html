@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron jumbotron-fluid">
+            <img id="reel" src="assets/img/reel.png" alt="Reel">
+            <div class="container">
+                <h1 class="display-4">Reel Time Trivia</h1>
+                <p class="lead">Test your knowledge of movies past and present. Impress your friend.</p>
+            </div>
+        </div>
+        <div class="container begin">
+            <h1 class="display-4">
+                You will have 30 seconds to answer 8 questions. Press Start When Ready
+            </h1>
+            <br>
+            <button id="startButton" class="btn btn-dark w-100" type="button">Start</button>
+        </div>
+        <div class="container-fluid game">
+            <div id="timeRemaining" class="display-4 text-center text-danger">30</div>
+            <br>
+            <form id="myForm">
+                <div class="question">
+                    <h3>What was the first movie given the 'Blockbuster title?' </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="0" value="1"> Gone With The Wind</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="0" value="2"> Jaws</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="0" value="3"> The Wizard of Oz</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="0" value="4"> Psycho</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <h3>What was Norman Bates' hobby in Psycho? </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="1" value="1"> Puppeteer</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="1" value="2"> Wood Carving</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="1" value="3"> Rock Collecting</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="1" value="4"> Taxidermy</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <h3>In Hitchcock's film, 'The Trouble with Harry', what was the trouble? </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="2" value="1"> He was heartbroken</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="2" value="2"> He was dead</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="2" value="3"> He had amnesia</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="2" value="4"> He was trapped in a dog's body</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <h3>What classic film was called productioin 9401 during filming? </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="3" value="1"> Psycho</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="3" value="2"> Hunt For Red October</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="3" value="3"> Goldfinger</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="3" value="4"> Serpico</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <h3>Whatis Sean Connery's real first name? </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="4" value="1"> Thomas</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="4" value="2"> Sean</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="4" value="3"> Mark</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="4" value="4"> Joseph</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <h3>What famous actor failed and audition for 'Fame' because he was not pretty enough? </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="5" value="1"> Kevin Bacon</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="5" value="2"> Tom Cruise</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="5" value="3"> Walter Matthau</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="5" value="4"> Sean Penn</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <h3>What actor was the star of the movie 'The Sixth Sense'? </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="6" value="1"> Mark Wagner</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="6" value="2"> Mel Gibson</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="6" value="3"> Tom Johnson</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="6" value="4"> Bruce Willis</label>
+                    </div>
+                </div>
+                <br>
+                <div class="question">
+                    <h3>Tom Cruise's first box office film was call what? </h3>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="7" value="1"> Top Gun</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="7" value="2"> The Outsiders</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="7" value="3"> Risky Business</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="7" value="4"> Days of Thunder</label>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button id="submitButton" class="btn btn-outline-dark w-100" type="submit">Done</button>
+            </form>
+        </div>
+
+        <div class="container results">
+            <h1 class="display-3">Game Over</h1>
+            Correct:
+            <p id="correct" class="result"></p>
+            <br> Incorrect:
+            <p id="incorrect" class="result"></p>
+            <br> Unanswered:
+            <p id="unanswered" class="result"></p>
+            <br>
+            <button id="restartButton" class="btn btn-dark w-100">Restart</button>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/app.js"></script>
+    <script>
+        var questionCount;
+        var correct = 0;
+        var incorrect = 0;
+        var answered = 0;
+        var unanswered = 0;
+        var answers = ["1", "3", "2", "2", "4", "1", "1", "3"];
+        var guesses = ["0", "0", "0", "0", "0", "0", "0", "0"];
+        var gameTimer;
+        var time = 30;
+
+        $(document).ready(function () {
+            questionCount = answers.length;
+            $(".results").hide();
+            $(".game").hide();
+
+            $("#startButton").on("click", function () {
+                $(".begin").hide();
+                $(".game").show();
+                loop();
+            });
+
+            $("input[type='radio']").on("change", function () {
+                var questionIndex = this.name;
+                var selectedAnswer = this.value;
+                var correctAnswer = answers[questionIndex];
+                guesses.splice(questionIndex, 1, selectedAnswer);
+            });
+
+            $("#submitButton").on("click", function (e) {
+                e.preventDefault();
+                endGame();
+            });
+
+            $("#restartButton").on("click", function (){
+                window.location.reload();
+            });
+        });
+
+        function loop() {
+            $("#timeRemaining").text(time + " seconds");
+            gameTimer = setTimeout(function () {
+                time -= 1;               
+                if (time === 0) {
+                    endGame();
+                } else {
+                    loop();
+                }
+            }, 1000);
+        }
+
+        function endGame() {
+            for (let i = 0; i < answers.length; i++) {
+                const answer = answers[i];
+                const guess = guesses[i];
+                if (guess != "0") answered += 1;
+                if (guess == answer) correct += 1;
+            }
+
+            $(".game").hide();
+            $(".results").show();
+            $("#correct").text(correct);
+            $("#incorrect").text(questionCount - correct);
+            $("#unanswered").text(questionCount - answered);
+        }
+    </script>
+</body>
+
+</html>
